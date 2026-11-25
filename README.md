@@ -18,7 +18,7 @@
 - `strategy-dashboard/`: 앱·스타일·업무 로직·테스트·구현 기록
 - `.agents/skills/strategy-team-operations/`: 전략팀 업무 관리 스킬
 
-배포 사이트의 현재 버전에는 발표자료·검토 페이지·캡처·발표 템플릿을 포함하지 않습니다. 원본은 별도의 로컬 작업 폴더에 보관합니다.
+발표자료는 업무 대시보드와 별도 경로로 공개합니다: [HTML 발표자료](https://bp10807-bokyungchoi.github.io/Strategy-Dashboard/presentation/) · [PowerPoint 다운로드](https://bp10807-bokyungchoi.github.io/Strategy-Dashboard/presentation/strategy-presentation.pptx). 캡처 5장은 가상 예시이며 HTML 안에 포함되어 있습니다. 검토 페이지와 작업본은 배포하지 않습니다.
 
 ## 개발·검증
 
@@ -27,3 +27,4 @@
 일정 경계, 완료 조건, 피드백, 백업·연결·이력, 보고 내용 등 테스트 10개를 제공합니다. 로컬에서는 저장소 폴더에서 `python -m http.server 8000`을 실행하고 `http://localhost:8000`에 접속할 수 있습니다.
 
 GitHub Pages는 공개 저장소 `main` 브랜치의 루트를 사용합니다. 회의록 자동 추출·사내 시스템 연결·권한·서버 저장은 후속 범위입니다.
+
