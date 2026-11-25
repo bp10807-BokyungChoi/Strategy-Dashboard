@@ -1,0 +1,10 @@
+outputs/
+node_modules/
+__pycache__/
+.env
+.env.*
+*.m4a
+*.wav
+*.mp3
+.DS_Store
+Thumbs.db

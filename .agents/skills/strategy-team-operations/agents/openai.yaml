@@ -1,0 +1,4 @@
+interface:
+  display_name: "전략팀 업무 관리"
+  short_description: "전략 방향과 실행 책임을 구분하며 협의체·진척·상부 피드백 관리"
+  default_prompt: "$strategy-team-operations를 사용해 제공한 자료를 기준으로 전략 과제의 진척, 담당·기한, 의사결정 필요 사항과 상부 피드백 후속 조치를 정리해줘."

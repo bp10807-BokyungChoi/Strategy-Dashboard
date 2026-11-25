@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="ko">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light"><title>전략운영 · 전략팀 업무 대시보드</title><link rel="stylesheet" href="styles.css"><script defer src="core.js"></script><script defer src="app.js"></script></head>
+<body>
+<a class="skip" href="#content">본문으로 건너뛰기</a>
+<aside class="sidebar"><a class="brand" href="index.html"><span class="brand-icon">S</span><span>전략운영<small>STRATEGY OPERATIONS</small></span></a><div class="nav-label">WORKSPACE</div><nav aria-label="주요 메뉴"><button data-page="overview" class="active"><span>01</span>전체 현황</button><button data-page="tasks"><span>02</span>실행 과제</button><button data-page="feedback"><span>03</span>상부 피드백</button><button data-page="reports"><span>04</span>회의 및 보고</button></nav><div class="side-bottom"><p>방향에서 실행까지,<br>다음 행동을 명확하게.</p><a href="../presentation.html">발표자료 ↗</a><small>개인 업무 공간 · 브라우저에 저장</small></div></aside>
+<div class="workspace"><header class="topbar"><span>전략기획 <b>/</b> 실행 관리</span><div class="top-tools"><span id="save-state" role="status">● 저장 준비 중</span><button id="demo-toggle" class="quiet">가상 예시 체험</button></div></header>
+<main id="content" tabindex="-1"><section class="page-heading"><div><div class="eyebrow">STRATEGY WORKSPACE</div><h1 id="page-title">전략 과제 현황</h1><p id="page-description">핵심 일정과 후속 조치를 한눈에 확인하세요.</p></div><button id="add-primary" class="primary">＋ 새 과제</button></section>
+<div id="demo-banner" class="demo-banner" hidden><strong>가상 예시 모드</strong><span>담당·일정·현황은 모두 시연용입니다. 실제 업무 데이터와 분리되어 있습니다.</span><button id="exit-demo">내 업무로 돌아가기 →</button></div>
+<div id="notice" class="notice" role="status" hidden></div>
+<section class="toolbar" aria-label="현황 조회 조건"><label class="search"><span class="sr-only">과제 검색</span><input id="search" type="search" placeholder="과제명, 담당자, 피드백 검색"></label><label><span>전략 영역</span><select id="project-filter"><option value="">전체 영역</option></select></label><label><span>진행 상태</span><select id="status-filter"><option value="">전체 상태</option></select></label><label><span>일정</span><select id="risk-filter"><option value="">전체 일정</option><option value="late">지연</option><option value="risk">위험</option><option value="unknown">판단 불가</option><option value="normal">일정 정상</option><option value="done">완료</option></select></label><label><span>기준일</span><input id="asof" type="date" required></label><button id="clear-filters" class="quiet">초기화</button></section>
+<div id="view"></div>
+<footer class="footer"><span>전략팀은 방향·조율·진척 점검, 실행부서는 구체적 실행안을 기획합니다.</span><div><button id="export-data">JSON 백업</button><label class="file-button">백업 가져오기<input id="import-data" type="file" accept=".json,application/json"></label><a href="PLAN.md" target="_blank" rel="noopener">구현 계획 ↗</a></div></footer>
+<p class="storage-note">이 브라우저·주소에 저장됩니다. 기기를 옮기거나 브라우저 데이터를 지우기 전 JSON 백업을 보관해주세요.</p>
+</main></div>
+<dialog id="editor"><form id="edit-form"><div class="dialog-head"><div><span class="eyebrow" id="editor-kind"></span><h2 id="editor-title"></h2></div><button type="button" class="icon-button" data-close aria-label="편집 닫기">×</button></div><div id="editor-fields" class="form-grid"></div><p id="form-error" role="alert" class="form-error"></p><div class="dialog-foot"><button type="button" data-close>취소</button><button type="submit" class="primary">저장하기</button></div></form></dialog>
+<dialog id="confirm-dialog"><form method="dialog"><div class="dialog-head"><h2 id="confirm-title">백업 가져오기</h2></div><p id="confirm-text"></p><div class="dialog-foot"><button value="cancel">취소</button><button value="ok" class="primary">가져오기</button></div></form></dialog>
+<noscript><p>대시보드를 사용하려면 브라우저의 JavaScript를 켜주세요.</p></noscript>
+</body></html>
